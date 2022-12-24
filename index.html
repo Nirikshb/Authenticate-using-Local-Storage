@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authenticate Using Local Storage</title>
+</head>
+<body>
+    <header>
+        <p>Signup</p>
+        <p>Profile</p>
+      </header>
+      <hr>
+    <div class="contain">  
+        <h2>Signup</h2>
+        <form id="form" onsubmit="signup()">
+<!-- Name -->
+        <label for="fname"></label><br>
+        <input type="text" placeholder="Full Name" id="fname"><br>
+<!-- Email -->
+        <label for="email"></label><br>
+        <input type="email" placeholder="Email" id="email"><br>
+<!-- Password -->
+        <label for="password"></label><br>
+        <input type="password" placeholder="Password" name="password" autocomplete="on"><br>
+<!-- Confirm -->        
+        <label for="confirm"></label><br>
+        <input type="password" placeholder="Confirm Password" id="cpassword" autocomplete="on"><br><br>
+<!-- Submit Button -->
+      <button type="submit" id="signup" onclick="renderData()"><a style="text-decoration: none;" href="./profile.html">Signup</a></button>
+      <!--  -->
+</form> 
+    <!--  -->
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
