@@ -4,17 +4,14 @@
     background-color: black;
 }
 
-p{
-    margin-top: 0.5%;
-}
 
 header{
-    display: flex;
+    display: grid;
     gap: 1em;
-    justify-content:flex-end;
+    justify-content:center;
     margin-right: 1em;
     color: white;
-    margin-bottom: 0.5%;
+    /* margin-bottom: 0.5%; */
 }
 
 hr{
@@ -23,9 +20,6 @@ hr{
 
 .contain{
     color: white;
-    margin-top: 3%;
-    display: grid;
-    justify-content: center;
 }
 
 input{
@@ -37,7 +31,7 @@ input{
     /* border-color: white; */
     border-bottom-style: solid;
     border-bottom-width: thin;
-    width: 50vw;
+    width: 30vw;
 }
 input:focus{
     outline : none 

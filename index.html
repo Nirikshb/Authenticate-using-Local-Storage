@@ -1,39 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Authenticate Using Local Storage</title>
 </head>
 <body>
     <header>
-        <p>Signup</p>
+        <!-- <p>Signup</p>
         <p>Profile</p>
       </header>
       <hr>
     <div class="contain">  
         <h2>Signup</h2>
-        <form id="form" onsubmit="signup()">
+        
+        <form id="form" onsubmit="signup()"> -->
 <!-- Name -->
-        <label for="fname"></label><br>
-        <input type="text" placeholder="Full Name" id="fname"><br>
+        <!-- <label for="fname"></label><br>
+        <input type="text" placeholder="Full Name" id="fname"><br> -->
 <!-- Email -->
-        <label for="email"></label><br>
-        <input type="email" placeholder="Email" id="email"><br>
+        <!-- <label for="email"></label><br>
+        <input type="email" placeholder="Email" id="email"><br> -->
 <!-- Password -->
-        <label for="password"></label><br>
-        <input type="password" placeholder="Password" name="password" autocomplete="on"><br>
+        <!-- <label for="password"></label><br>
+        <input type="password" placeholder="Password" name="password" autocomplete="on"><br> -->
 <!-- Confirm -->        
-        <label for="confirm"></label><br>
-        <input type="password" placeholder="Confirm Password" id="cpassword" autocomplete="on"><br><br>
+        <!-- <label for="confirm"></label><br>
+        <input type="password" placeholder="Confirm Password" id="cpassword" autocomplete="on"><br><br> -->
 <!-- Submit Button -->
-      <button type="submit" id="signup" onclick="renderData()"><a style="text-decoration: none;" href="./profile.html">Signup</a></button>
+      <!-- <button type="submit" id="signup" onclick="renderData()">Signup</button> -->
       <!--  -->
-</form> 
+<!-- </form>  -->
     <!--  -->
-    </div>
+    <!-- </div> -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Signup</title>
+    </head>
+    <body>
+      <h1>Signup</h1>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <br>
+        <button type="submit" id="signup-btn">Signup</button>
+      </form>
+      <p id="success-msg" style="color: green; display: none;">Signup successful!</p>
+      <p id="error-msg" style="color: red; display: none;"></p>
+    
+      <script src="./index.js"></script>
+    </body>
+    </html>
+    
+
 
     <script src="./index.js"></script>
 </body>
